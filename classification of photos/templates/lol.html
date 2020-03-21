@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Профиль - Сириус</title>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link href="css/forms-ui-srs.css?v=8db9defc7011e19afae8386d98b54b1a" rel="stylesheet">
+    <script>var LNG = {"ru": "199810000000", "en": "199810000001",};
+    var DEF_LNG = "ru";
+    var CUR_LNG = "ru";</script>
+    <script>function formsOnDocumentReady(func) {
+        if (['complete', 'loaded', 'interactive'].indexOf(document.readyState) != -1 && document.body) {
+            func();
+        } else {
+            document.addEventListener('DOMContentLoaded', func, false);
+        }
+    }
+
+    window.relayQlId = 1000;
+    window.Relay = {
+        QL: {
+            __id: function () {
+                return window.relayQlId++;
+            }
+        },
+    };</script>
+</head>
+<body>
+<nav></nav>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header"><a href="/"><img alt="Сириус" class="navbar-brand" src="img/logo.jpg"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false"><span class="sr-only">Скрыть</span><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="forms?&fid=199910000016&__act=sl">Мои заявки</a></li>
+                <li><a href="https://edu.sirius.online">Сириус.Курсы</a></li>
+            </ul>
+            <p class="navbar-text">Поддержка <a href="mailto:online@sochisirius.ru" class="navbar-link">online@sochisirius.ru</a>&nbsp;&nbsp;&nbsp;<a
+                    href="https://sochisirius.ru/registration">Заявки на программы Сириуса</a></p>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span
+                        class="glyphicon glyphicon-user"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="forms?fid=199910000004&__act=send">Валеев Ильнур</a></li>
+                        <li><a href="main?goout">Выход</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <script>function handlePositionChange(posSelectElemId, posElemId, posStrElemId) {
+        var posSelectElem = document.getElementById(posSelectElemId);
+        var posId;
+        if (posSelectElem) {
+            posId = posSelectElem.options[posSelectElem.selectedIndex].value;
+        }
+        if (posId == '150910079858') {
+            document.getElementById(posElemId).style['display'] = 'none';
+            document.getElementById(posStrElemId).style['display'] = 'block';
+        } else {
+            document.getElementById(posElemId).style['display'] = 'block';
+            document.getElementById(posStrElemId).style['display'] = 'none';
+        }
+    }
+    </script>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <h2>Ваш профиль
+                <small><a href="forms?fid=199910221294&__act=send">Смена пароля</a></small>
+            </h2>
+            <br/>
+            <form autocomplete="off" method="POST" action="forms">
+                <div class="form-group"><label for="f_id">Номер профиля</label>
+                    <div class="form-control-static">100120030110044769</div>
+                </div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#profile" aria-controls="home" role="tab"
+                                                              data-toggle="tab" style="text-decoration: none;">Личные
+                        данные</a></li>
+                    <li role="presentation"><a href="#results" aria-controls="profile" role="tab" data-toggle="tab"
+                                               style="text-decoration: none;">Академические достижения</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane in active" id="profile"><br/>
+                        <div class="form-group form-group-required"><label for="f_1001410013" class="control-label">Фамилия</label><input
+                                type="text" class="form-control" name="f_1001410013" id="f_1001410013" value="Валеев">
+                        </div>
+                        <div class="form-group form-group-required"><label for="f_1001410012"
+                                                                           class="control-label">Имя</label><input
+                                type="text" class="form-control" name="f_1001410012" id="f_1001410012" value="Ильнур">
+                        </div>
+                        <div class="form-group"><label for="f_1001410014" class="control-label">Отчество</label><input
+                                type="text" class="form-control" name="f_1001410014" id="f_1001410014"
+                                value="Маратович"></div>
+                        <div class="form-group-required"><label>Дата рождения</label>
+                            <div id="f_1001510000_wmp">
+                                <div class="form-group" data-reactroot="">
+                                    <div class="react-datepicker-wrapper">
+                                        <div class="react-datepicker__input-container">
+                                            <div class="input-group "><input type="text" class="form-control"
+                                                                             value="01.02.2003" name="f_1001510000"
+                                                                             id=""/>
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default"><i
+                                                            class="glyphicon glyphicon-calendar"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>if (['complete', 'loaded', 'interactive'].indexOf(document.readyState) != -1 && document.body) {
+                            Forms.renderDateField('f_1001510000', '14', 'ru', '01.02.2003', true, false, '');
+                        } else {
+                            document.addEventListener('DOMContentLoaded', function () {
+                                Forms.renderDateField('f_1001510000', '14', 'ru', '01.02.2003', true, false, '');
+                            }, false);
+                        }</script>
+                        <div class="form-group"><label for="f_1001410010" class="control-label">E-mail</label><input
+                                type="text" class="form-control" name="f_1001410010" id="f_1001410010"
+                                value="ilnur.valeev123@gmail.com" placeholder="example@example.com" disabled></div>
+                        <div class="form-group"><label for="f_1001410011" class="control-label">Телефон</label><input
+                                type="text" class="form-control" name="f_1001410011" id="f_1001410011"
+                                value="79196846542" placeholder="79991234567"></div>
+                        <div class="form-group"><label for="f_1001410124" class="control-label">Ссылка на
+                            VK</label><input type="text" class="form-control" name="f_1001410124" id="f_1001410124"
+                                             value=""></div>
+                        <div class="form-group"><label>Регион проживания</label><select name="f_1001910012"
+                                                                                        class="form-control"
+                                                                                        onmousewheel="return false;">
+                            <option value=""></option>
+                            <option value="150110000000">01 Адыгея Республика</option>
+                            <option value="150110005989">02 Башкортостан Республика</option>
+                            <option value="150110048166">03 Бурятия Республика</option>
+                            <option value="150110063216">04 Алтай Республика</option>
+                            <option value="150110066844">05 Дагестан Республика</option>
+                            <option value="150110090893">06 Ингушетия Республика</option>
+                            <option value="150110094775">07 Кабардино-Балкарская Республика</option>
+                            <option value="150110098655">08 Калмыкия Республика</option>
+                            <option value="150110102218">09 Карачаево-Черкесская Республика</option>
+                            <option value="150110106194">10 Карелия Республика</option>
+                            <option value="150110112581">11 Коми Республика</option>
+                            <option value="150110119011">12 Марий Эл Республика</option>
+                            <option value="150110126840">13 Мордовия Республика</option>
+                            <option value="150110135110">14 Саха /Якутия/ Республика</option>
+                            <option value="150110146267">15 Северная Осетия - Алания Республика</option>
+                            <option value="150110148993" selected>16 Татарстан Республика</option>
+                            <option value="150110179218">17 Тыва Республика</option>
+                            <option value="150110184035">18 Удмуртская Республика</option>
+                            <option value="150110202716">19 Хакасия Республика</option>
+                            <option value="150110211874">20 Чеченская Республика</option>
+                            <option value="150110223288">21 Чувашская Республика - Чувашия</option>
+                            <option value="150110236045">22 Алтайский Край</option>
+                            <option value="150110258178">23 Краснодарский Край</option>
+                            <option value="150110303898">24 Красноярский Край</option>
+                            <option value="150110331321">25 Приморский Край</option>
+                            <option value="150110345720">26 Ставропольский Край</option>
+                            <option value="150110364498">27 Хабаровский Край</option>
+                            <option value="150110374983">28 Амурская Область</option>
+                            <option value="150110383173">29 Архангельская Область</option>
+                            <option value="150110395568">30 Астраханская Область</option>
+                            <option value="150110405616">31 Белгородская Область</option>
+                            <option value="150110421440">32 Брянская Область</option>
+                            <option value="150110438624">33 Владимирская Область</option>
+                            <option value="150110453209">34 Волгоградская Область</option>
+                            <option value="150110475019">35 Вологодская Область</option>
+                            <option value="150110494317">36 Воронежская Область</option>
+                            <option value="150110515120">37 Ивановская Область</option>
+                            <option value="150110527631">38 Иркутская Область</option>
+                            <option value="150110553767">39 Калининградская Область</option>
+                            <option value="150110566233">40 Калужская Область</option>
+                            <option value="150110580475">41 Камчатский Край</option>
+                            <option value="150110582875">42 Кемеровская область - Кузбасс Область</option>
+                            <option value="150110603828">43 Кировская Область</option>
+                            <option value="150110625226">44 Костромская Область</option>
+                            <option value="150110635567">45 Курганская Область</option>
+                            <option value="150110648263">46 Курская Область</option>
+                            <option value="150110658625">47 Ленинградская Область</option>
+                            <option value="150110701077">48 Липецкая Область</option>
+                            <option value="150110711928">49 Магаданская Область</option>
+                            <option value="150110713070">50 Московская Область</option>
+                            <option value="150110775367">51 Мурманская Область</option>
+                            <option value="150110778142">52 Нижегородская Область</option>
+                            <option value="150110806036">53 Новгородская Область</option>
+                            <option value="150110818753">54 Новосибирская Область</option>
+                            <option value="150110836881">55 Омская Область</option>
+                            <option value="150110852341">56 Оренбургская Область</option>
+                            <option value="150110873080">57 Орловская Область</option>
+                            <option value="150110884402">58 Пензенская Область</option>
+                            <option value="150110897746">59 Пермский Край</option>
+                            <option value="150110931511">60 Псковская Область</option>
+                            <option value="150110946488">61 Ростовская Область</option>
+                            <option value="150110981595">62 Рязанская Область</option>
+                            <option value="150110993301">63 Самарская Область</option>
+                            <option value="150111019731">64 Саратовская Область</option>
+                            <option value="150111042414">65 Сахалинская Область</option>
+                            <option value="150111046821">66 Свердловская Область</option>
+                            <option value="150111079698">67 Смоленская Область</option>
+                            <option value="150111095926">68 Тамбовская Область</option>
+                            <option value="150111107833">69 Тверская Область</option>
+                            <option value="150111129960">70 Томская Область</option>
+                            <option value="150111139567">71 Тульская Область</option>
+                            <option value="150111154061">72 Тюменская Область</option>
+                            <option value="150111173102">73 Ульяновская Область</option>
+                            <option value="150111184108">74 Челябинская Область</option>
+                            <option value="150111208472">75 Забайкальский Край</option>
+                            <option value="150111221129">76 Ярославская Область</option>
+                            <option value="150111239493">77 Москва Город</option>
+                            <option value="150111250280">78 Санкт-Петербург Город</option>
+                            <option value="150111255687">79 Еврейская Автономная область</option>
+                            <option value="150111257618">83 Ненецкий Автономный округ</option>
+                            <option value="150111257975">86 Ханты-Мансийский Автономный округ - Югра Автономный округ
+                            </option>
+                            <option value="150111266791">87 Чукотский Автономный округ</option>
+                            <option value="150111267454">89 Ямало-Ненецкий Автономный округ</option>
+                            <option value="150111269815">91 Крым Республика</option>
+                            <option value="150111288335">92 Севастополь Город</option>
+                            <option value="150111291035">99 Байконур Город</option>
+                        </select></div>
+                        <div class="form-group"><label>Гражданство</label><select name="f_1001910013"
+                                                                                  class="form-control"
+                                                                                  onmousewheel="return false;">
+                            <option value=""></option>
+                            <option value="151210297059">Союз Советских Социалистических Республик</option>
+                            <option value="151210297058">Сербия</option>
+                            <option value="151210297057">Республика Абхазия</option>
+                            <option value="151210297056">КБАССР</option>
+                            <option value="151210297055">Республика Замбия</option>
+                            <option value="151210297054">Союзная Республика Югославия</option>
+                            <option value="151210297053">Йеменская Республика</option>
+                            <option value="151210297052">Независимое Государство Западное Самоа</option>
+                            <option value="151210297051">УОЛЛИС И ФУТУНА</option>
+                            <option value="151210297050">Республика Венесуэла</option>
+                            <option value="151210297049">Восточная Республика Уругвай</option>
+                            <option value="151210297048">БУРКИНА - ФАСО</option>
+                            <option value="151210297047">Виргинские острова Соединенных Штатов</option>
+                            <option value="151210297046">Объединенная Республика Танзания</option>
+                            <option value="151210297045">Бывшая Югославская Республика Македония</option>
+                            <option value="151210297044">Республика Уганда</option>
+                            <option value="151210297043">ТУВАЛУ</option>
+                            <option value="151210297042">ОСТРОВА ТЕРКС И КАЙКОС</option>
+                            <option value="151210297041">Тунисская Республика</option>
+                            <option value="151210297040">Республика Тринидад и Тобаго</option>
+                            <option value="151210297039">Королевство Тонга</option>
+                            <option value="151210297009">ТОКЕЛАУ</option>
+                            <option value="151210296996">Тоголезская Республика</option>
+                            <option value="151210296995">Королевство Таиланд</option>
+                            <option value="151210296994">Королевство Свазиленд</option>
+                            <option value="151210296993">ШПИЦБЕРГЕН И ЯН МАЙЕН</option>
+                            <option value="151210296992">Республика Суринам</option>
+                            <option value="151210296991">Республика Судан</option>
+                            <option value="151210296990">ЗАПАДНАЯ САХАРА</option>
+                            <option value="151210296989">Республика Зимбабве</option>
+                            <option value="151210296988">Южно - Африканская Республика</option>
+                            <option value="151210296987">Сомалийская Демократическая Республика</option>
+                            <option value="151210296986">Республика Сингапур</option>
+                            <option value="151210296985">Республика Сьерра - Леоне</option>
+                            <option value="151210296984">Республика Сейшелы</option>
+                            <option value="151210296983">Республика Сенегал</option>
+                            <option value="151210296982">Королевство Саудовская Аравия</option>
+                            <option value="151210296981">Демократическая Республика Сан - Томе и Принсипи</option>
+                            <option value="151210296980">Республика Сан - Марино</option>
+                            <option value="151210296979">СЕНТ - ВИНСЕНТ И ГРЕНАДИНЫ</option>
+                            <option value="151210296978">СЕН - ПЬЕР И МИКЕЛОН</option>
+                            <option value="151210296977">СЕНТ - ЛЮСИЯ</option>
+                            <option value="151210296976">АНГЛИЯ</option>
+                            <option value="151210296975">СЕНТ - КИТС И НЕВИС</option>
+                            <option value="151210296974">СВЯТАЯ ЕЛЕНА</option>
+                            <option value="151210296973">Руандийская Республика</option>
+                            <option value="151210296972">РУМЫНИЯ</option>
+                            <option value="151210296971">РЕЮНЬОН</option>
+                            <option value="151210296970">ПУЭРТО - РИКО</option>
+                            <option value="151210296969">ВОСТОЧНЫЙ ТИМОР</option>
+                            <option value="151210296968">Республика Гвинея - Бисау</option>
+                            <option value="151210296967">ПИТКЕРН</option>
+                            <option value="151210296966">Республика Филиппины</option>
+                            <option value="151210296965">Республика Перу</option>
+                            <option value="151210296964">Республика Парагвай</option>
+                            <option value="151210296963">ПАПУА - НОВАЯ ГВИНЕЯ</option>
+                            <option value="151210296962">Республика Панама</option>
+                            <option value="151210296961">Исламская Республика Пакистан</option>
+                            <option value="151210296960">Республика Палау</option>
+                            <option value="151210296959">Республика Маршалловы Острова</option>
+                            <option value="151210296958">Федеративные штаты Микронезии</option>
+                            <option value="151210296957">МАЛЫЕ ТИХООКЕАНСКИЕ ОТДАЛЕННЫЕ ОСТРОВА СОЕДИНЕННЫХ ШТАТОВ
+                            </option>
+                            <option value="151210296956">Содружество Северных Марианских островов</option>
+                            <option value="151210296955">ОСТРОВ НОРФОЛК</option>
+                            <option value="151210296954">НИУЭ</option>
+                            <option value="151210296953">Федеративная Республика Нигерия</option>
+                            <option value="151210296952">Республика Нигер</option>
+                            <option value="151210296951">Республика Никарагуа</option>
+                            <option value="151210296950">НОВАЯ ЗЕЛАНДИЯ</option>
+                            <option value="151210296949">Республика Вануату</option>
+                            <option value="151210296948">НОВАЯ КАЛЕДОНИЯ</option>
+                            <option value="151210296947">АРУБА</option>
+                            <option value="151210296946">НИДЕРЛАНДСКИЕ АНТИЛЫ</option>
+                            <option value="151210296945">Королевство Непал</option>
+                            <option value="151210296944">Республика Науру</option>
+                            <option value="151210296943">Республика Намибия</option>
+                            <option value="151210296942">Султанат Оман</option>
+                            <option value="151210296941">Республика Мозамбик</option>
+                            <option value="151210296940">Королевство Марокко</option>
+                            <option value="151210296939">МОНТСЕРРАТ</option>
+                            <option value="151210296938">Княжество Монако</option>
+                            <option value="151210296937">Республика Маврикий</option>
+                            <option value="151210296936">Исламская Республика Мавритания</option>
+                            <option value="151210296935">МАРТИНИКА</option>
+                            <option value="151210296934">Республика Мальта</option>
+                            <option value="151210296933">Республика Мали</option>
+                            <option value="151210296932">Мальдивская Республика</option>
+                            <option value="151210296931">Республика Малави</option>
+                            <option value="151210296930">Республика Мадагаскар</option>
+                            <option value="151210296929">МАКАО</option>
+                            <option value="151210296928">Великое Герцогство Люксембург</option>
+                            <option value="151210296927">Княжество Лихтенштейн</option>
+                            <option value="151210296926">Социалистическая Народная Ливийская Арабская Джамахирия
+                            </option>
+                            <option value="151210296925">Республика Либерия</option>
+                            <option value="151210296924">Королевство Лесото</option>
+                            <option value="151210296923">Ливанская Республика</option>
+                            <option value="151210296922">ЛАОССКАЯ НАРОДНО - ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="151210296921">Государство Кувейт</option>
+                            <option value="151210296920">Республика Кения</option>
+                            <option value="151210296919">Иорданское Хашимитское Королевство</option>
+                            <option value="151210296874">ЯМАЙКА</option>
+                            <option value="151210296873">Республика Кот д'Ивуар</option>
+                            <option value="151210296872">Республика Ирак</option>
+                            <option value="151210296871">Исламская Республика Иран</option>
+                            <option value="151210296870">Республика Индонезия</option>
+                            <option value="151210296869">Республика Индия</option>
+                            <option value="151210296868">Республика Исландия</option>
+                            <option value="151210296867">ГОНКОНГ</option>
+                            <option value="151210296866">Республика Гондурас</option>
+                            <option value="151210296865">ПАПСКИЙ ПРЕСТОЛ (ГОСУДАРСТВО - ГОРОД ВАТИКАН)</option>
+                            <option value="151210296864">Республика Гаити</option>
+                            <option value="151210296863">ОСТРОВ ХЕРД И ОСТРОВА МАКДОНАЛЬД</option>
+                            <option value="151210296862">Республика Гайана</option>
+                            <option value="151210296861">Гвинейская Республика</option>
+                            <option value="151210296860">Республика Гватемала</option>
+                            <option value="151210296859">ГУАМ</option>
+                            <option value="151210296858">ГВАДЕЛУПА</option>
+                            <option value="151210296857">ГРЕНАДА</option>
+                            <option value="151210296856">ГРЕНЛАНДИЯ</option>
+                            <option value="151210296855">КИРИБАТИ</option>
+                            <option value="151210296854">Республика Гана</option>
+                            <option value="151210296853">ГИБРАЛТАР</option>
+                            <option value="151210296852">ПАЛЕСТИНСКАЯ ТЕРРИТОРИЯ, ОККУПИРОВАННАЯ</option>
+                            <option value="151210296845">Республика Гамбия</option>
+                            <option value="151210296844">Габонская Республика</option>
+                            <option value="151210296843">Республика Джибути</option>
+                            <option value="151210296842">ФРАНЦУЗСКИЕ ЮЖНЫЕ ТЕРРИТОРИИ</option>
+                            <option value="151210296841">ФРАНЦУЗСКАЯ ПОЛИНЕЗИЯ</option>
+                            <option value="151210296840">ФРАНЦУЗСКАЯ ГВИАНА</option>
+                            <option value="151210296839">Республика Фиджи</option>
+                            <option value="151210296838">ЮЖНАЯ ДЖОРДЖИЯ И ЮЖНЫЕ САНДВИЧЕВЫ ОСТРОВА</option>
+                            <option value="151210296837">ФОЛКЛЕНДСКИЕ ОСТРОВА (МАЛЬВИНСКИЕ)</option>
+                            <option value="151210296836">ФАРЕРСКИЕ ОСТРОВА</option>
+                            <option value="151210296835">ЭРИТРЕЯ</option>
+                            <option value="151210296834">Федеративная Демократическая Республика Эфиопия</option>
+                            <option value="151210296833">Республика Экваториальная Гвинея</option>
+                            <option value="151210296832">Республика Эль - Сальвадор</option>
+                            <option value="151210296831">Республика Эквадор</option>
+                            <option value="151210296830">ДОМИНИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="151210296829">Содружество Доминики</option>
+                            <option value="151210296800">Республика Бенин</option>
+                            <option value="151210296799">Республика Кипр</option>
+                            <option value="151210296798">Республика Коста - Рика</option>
+                            <option value="151210296797">ОСТРОВА КУКА</option>
+                            <option value="151210296796">Демократическая Республика Конго</option>
+                            <option value="151210296795">Республика Конго</option>
+                            <option value="151210296794">МАЙОТТА</option>
+                            <option value="151210296793">Исламская Федеральная Республика Коморы</option>
+                            <option value="151210296792">Республика Колумбия</option>
+                            <option value="151210296791">КОКОСОВЫЕ (КИЛИНГ) ОСТРОВА</option>
+                            <option value="151210296790">ОСТРОВ РОЖДЕСТВА</option>
+                            <option value="151210296789">ТАЙВАНЬ (КИТАЙ)</option>
+                            <option value="151210296788">Республика Чили</option>
+                            <option value="151210296787">Республика Чад</option>
+                            <option value="151210296786">Демократическая Социалистическая Республика Шри - Ланка
+                            </option>
+                            <option value="151210296785">ЦЕНТРАЛЬНО - АФРИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="151210296784">ОСТРОВА КАЙМАН</option>
+                            <option value="151210296707">Республика Кабо - Верде</option>
+                            <option value="151210296706">Республика Камерун</option>
+                            <option value="151210296705">Королевство Камбоджа</option>
+                            <option value="151210296704">Республика Бурунди</option>
+                            <option value="151210296703">Союз Мьянма</option>
+                            <option value="151210296702">БРУНЕЙ - ДАРУССАЛАМ</option>
+                            <option value="151210296701">Британские Виргинские острова</option>
+                            <option value="151210296700">СОЛОМОНОВЫ ОСТРОВА</option>
+                            <option value="151210296699">БРИТАНСКАЯ ТЕРРИТОРИЯ В ИНДИЙСКОМ ОКЕАНЕ</option>
+                            <option value="151210296698">БЕЛИЗ</option>
+                            <option value="151210296697">ОСТРОВ БУВЕ</option>
+                            <option value="151210296696">Республика Ботсвана</option>
+                            <option value="151210296695">Республика Босния и Герцеговина</option>
+                            <option value="151210296694">Республика Боливия</option>
+                            <option value="151210296693">Королевство Бутан</option>
+                            <option value="151210296692">БЕРМУДЫ</option>
+                            <option value="151210296691">БАРБАДОС</option>
+                            <option value="151210296690">Народная Республика Бангладеш</option>
+                            <option value="151210296689">Государство Бахрейн</option>
+                            <option value="151210296688">Содружество Багамы</option>
+                            <option value="151210296686">Аргентинская Республика</option>
+                            <option value="151210296683">АНТИГУА И БАРБУДА</option>
+                            <option value="151210296682">Республика Ангола</option>
+                            <option value="151210296681">Княжество Андорра</option>
+                            <option value="151210296680">АМЕРИКАНСКОЕ САМОА</option>
+                            <option value="151210296679">Алжирская Народная Демократическая Республика</option>
+                            <option value="151210296672">АНТАРКТИДА</option>
+                            <option value="151210296671">Республика Албания</option>
+                            <option value="151210296670">Исламское Государство Афганистан</option>
+                            <option value="151210296669">Мексиканские Соединенные Штаты</option>
+                            <option value="151210296668">МАЛАЙЗИЯ</option>
+                            <option value="151210296667">Республика Куба</option>
+                            <option value="151210296647">ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ</option>
+                            <option value="151210296646">Киргизская Республика</option>
+                            <option value="151210296645">Государство Катар</option>
+                            <option value="151210296644">Арабская Республика Египет</option>
+                            <option value="151210296643">СИРИЙСКАЯ АРАБСКАЯ РЕСПУБЛИКА</option>
+                            <option value="151210296642">Социалистическая Республика Вьетнам</option>
+                            <option value="151210296641">Республика Узбекистан</option>
+                            <option value="151210296640">Соединенное Королевство Великобритании и Северной Ирландии
+                            </option>
+                            <option value="151210296639">Республика Польша</option>
+                            <option value="151210296638">Королевство Нидерландов</option>
+                            <option value="151210296637">Республика Молдова</option>
+                            <option value="151210296636">Литовская Республика</option>
+                            <option value="151210296635">Корейская Народно - Демократическая Республика</option>
+                            <option value="151210296634">ЯПОНИЯ</option>
+                            <option value="151210296633">Итальянская Республика</option>
+                            <option value="151210296632">Государство Израиль</option>
+                            <option value="151210296631">ИРЛАНДИЯ</option>
+                            <option value="151210296629">Венгерская Республика</option>
+                            <option value="151210296627">Греческая Республика</option>
+                            <option value="151210296626">Федеративная Республика Германия</option>
+                            <option value="151210296625">ГРУЗИЯ</option>
+                            <option value="151210296624">Эстонская Республика</option>
+                            <option value="151210296623">Королевство Дания</option>
+                            <option value="151210296622">ЧЕШСКАЯ РЕСПУБЛИКА</option>
+                            <option value="151210296621">Республика Хорватия</option>
+                            <option value="151210296620">КАНАДА</option>
+                            <option value="151210296619">Республика Болгария</option>
+                            <option value="151210296618">Федеративная Республика Бразилия</option>
+                            <option value="151210296617">Королевство Бельгии</option>
+                            <option value="151210296616">Азербайджанская Республика</option>
+                            <option value="151210296615">Португальская Республика</option>
+                            <option value="151210296614">Турецкая Республика</option>
+                            <option value="151210296613">Республика Таджикистан</option>
+                            <option value="151210296612">Швейцарская Конфедерация</option>
+                            <option value="151210296611">Королевство Швеция</option>
+                            <option value="151210296610">Королевство Испания</option>
+                            <option value="151210296609">Республика Словения</option>
+                            <option value="151210296608">Словацкая Республика</option>
+                            <option value="151210296607">Королевство Норвегия</option>
+                            <option value="151210293288">Австрийская Республика</option>
+                            <option value="151210293287">Республика Корея</option>
+                            <option value="151210291515">Монголия</option>
+                            <option value="151210291514">Китайская народная республика</option>
+                            <option value="151210267610">Французская Республика</option>
+                            <option value="151210267609">Финляндская Республика</option>
+                            <option value="151210267608">Туркменистан</option>
+                            <option value="151210267607">Соединенные Штаты Америки</option>
+                            <option value="151210267606">Латвийская Республика</option>
+                            <option value="151210267605">Республика Армения</option>
+                            <option value="151210267604">Австралия</option>
+                            <option value="151210177645">Украина</option>
+                            <option value="151210177644">Казахстан</option>
+                            <option value="151210177643">Беларусь</option>
+                            <option value="151210077755" selected>Российская Федерация</option>
+                            <option value="151210077756">Другое</option>
+                        </select></div>
+                        <div class="form-group"><label for="f_1001410016" class="control-label">СНИЛС
+                            (номер)</label><input type="text" class="form-control" name="f_1001410016" id="f_1001410016"
+                                                  value="16545528991" placeholder="Без пробелов и дефисов: 12345678901">
+                        </div>
+                        <div class="panel panel-default form-group">
+                            <div class="panel-heading"><h3 class="panel-title">Паспорт</h3></div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-5 form-group"><label for="f_1001410037" class="control-label">Серия</label><input
+                                            type="text" class="form-control" name="f_1001410037" id="f_1001410037"
+                                            value="9217" placeholder="1234"></div>
+                                    <div class="col-lg-7 form-group"><label for="f_1001410038" class="control-label">Номер</label><input
+                                            type="text" class="form-control" name="f_1001410038" id="f_1001410038"
+                                            value="177551" placeholder="123456"></div>
+                                </div>
+                                <div class="form-group"><label for="f_1001410039" class="control-label">Кем
+                                    выдан</label><input type="text" class="form-control" name="f_1001410039"
+                                                        id="f_1001410039"
+                                                        value="отделом УФМС России по республике Татарстан в советском районе города Казани "
+                                                        placeholder="Октябрьским РУВД гор. Уфы респ. Башкортостан">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6"><label>Дата выдачи</label>
+                                        <div id="f_1001510004_wmp">
+                                            <div class="form-group" data-reactroot="">
+                                                <div class="react-datepicker-wrapper">
+                                                    <div class="react-datepicker__input-container">
+                                                        <div class="input-group "><input type="text"
+                                                                                         class="form-control"
+                                                                                         value="16.02.2017"
+                                                                                         name="f_1001510004" id=""/>
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default"><i
+                                                                        class="glyphicon glyphicon-calendar"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>if (['complete', 'loaded', 'interactive'].indexOf(document.readyState) != -1 && document.body) {
+                                        Forms.renderDateField('f_1001510004', '14', 'ru', '16.02.2017', true, false, '');
+                                    } else {
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            Forms.renderDateField('f_1001510004', '14', 'ru', '16.02.2017', true, false, '');
+                                        }, false);
+                                    }</script>
+                                    <div class="col-lg-6"><label for="f_1001410040" class="control-label">Код
+                                        подразделения</label><input type="text" class="form-control" name="f_1001410040"
+                                                                    id="f_1001410040" value="160-009"
+                                                                    placeholder="123-456"></div>
+                                </div>
+                                <div class="form-group"><label for="f_1001410061" class="control-label">Место рождения
+                                    (строго, как в паспорте)</label><input type="text" class="form-control"
+                                                                           name="f_1001410061" id="f_1001410061"
+                                                                           value="гор. Лениногорск"
+                                                                           placeholder="ГОР. УФА"></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default form-group">
+                            <div class="panel-heading"><h3 class="panel-title">Место работы</h3></div>
+                            <div class="panel-body">
+                                <table class="table table-responsive">
+                                    <tbody>
+                                    <tr id="j937ob_hiddenAdd" style="display: none">
+                                        <td>
+                                            <div class="form-group form-group-required">
+                                                <div id="wmp_widgetCompanyFromRegionChooser_1937923210_HXVr_$id"><p
+                                                        class="skeleton skeleton-bar_fat"></p>
+                                                    <p class="skeleton skeleton-bar"></p>
+                                                    <hr/>
+                                                    <p class="skeleton skeleton-bar_fat"></p>
+                                                    <p class="skeleton skeleton-bar"></p>
+                                                    <hr/>
+                                                </div>
+                                                <script>formsOnDocumentReady(function () {
+                                                    Forms.widgetCompanyFromRegionChooser('wmp_widgetCompanyFromRegionChooser_1937923210_HXVr_$id', {
+                                                        "formId": "199910000012",
+                                                        "allRegionsAndCodes": {
+                                                            "150110000000": ["01 Адыгея Республика", "01"],
+                                                            "150110005989": ["02 Башкортостан Республика", "02"],
+                                                            "150110048166": ["03 Бурятия Республика", "03"],
+                                                            "150110063216": ["04 Алтай Республика", "04"],
+                                                            "150110066844": ["05 Дагестан Республика", "05"],
+                                                            "150110090893": ["06 Ингушетия Республика", "06"],
+                                                            "150110094775": ["07 Кабардино-Балкарская Республика", "07"],
+                                                            "150110098655": ["08 Калмыкия Республика", "08"],
+                                                            "150110102218": ["09 Карачаево-Черкесская Республика", "09"],
+                                                            "150110106194": ["10 Карелия Республика", "10"],
+                                                            "150110112581": ["11 Коми Республика", "11"],
+                                                            "150110119011": ["12 Марий Эл Республика", "12"],
+                                                            "150110126840": ["13 Мордовия Республика", "13"],
+                                                            "150110135110": ["14 Саха /Якутия/ Республика", "14"],
+                                                            "150110146267": ["15 Северная Осетия - Алания Республика", "15"],
+                                                            "150110148993": ["16 Татарстан Республика", "16"],
+                                                            "150110179218": ["17 Тыва Республика", "17"],
+                                                            "150110184035": ["18 Удмуртская Республика", "18"],
+                                                            "150110202716": ["19 Хакасия Республика", "19"],
+                                                            "150110211874": ["20 Чеченская Республика", "20"],
+                                                            "150110223288": ["21 Чувашская Республика - Чувашия", "21"],
+                                                            "150110236045": ["22 Алтайский Край", "22"],
+                                                            "150110258178": ["23 Краснодарский Край", "23"],
+                                                            "150110303898": ["24 Красноярский Край", "24"],
+                                                            "150110331321": ["25 Приморский Край", "25"],
+                                                            "150110345720": ["26 Ставропольский Край", "26"],
+                                                            "150110364498": ["27 Хабаровский Край", "27"],
+                                                            "150110374983": ["28 Амурская Область", "28"],
+                                                            "150110383173": ["29 Архангельская Область", "29"],
+                                                            "150110395568": ["30 Астраханская Область", "30"],
+                                                            "150110405616": ["31 Белгородская Область", "31"],
+                                                            "150110421440": ["32 Брянская Область", "32"],
+                                                            "150110438624": ["33 Владимирская Область", "33"],
+                                                            "150110453209": ["34 Волгоградская Область", "34"],
+                                                            "150110475019": ["35 Вологодская Область", "35"],
+                                                            "150110494317": ["36 Воронежская Область", "36"],
+                                                            "150110515120": ["37 Ивановская Область", "37"],
+                                                            "150110527631": ["38 Иркутская Область", "38"],
+                                                            "150110553767": ["39 Калининградская Область", "39"],
+                                                            "150110566233": ["40 Калужская Область", "40"],
+                                                            "150110580475": ["41 Камчатский Край", "41"],
+                                                            "150110582875": ["42 Кемеровская Область", "42"],
+                                                            "150110603828": ["43 Кировская Область", "43"],
+                                                            "150110625226": ["44 Костромская Область", "44"],
+                                                            "150110635567": ["45 Курганская Область", "45"],
+                                                            "150110648263": ["46 Курская Область", "46"],
+                                                            "150110658625": ["47 Ленинградская Область", "47"],
+                                                            "150110701077": ["48 Липецкая Область", "48"],
+                                                            "150110711928": ["49 Магаданская Область", "49"],
+                                                            "150110713070": ["50 Московская Область", "50"],
+                                                            "150110775367": ["51 Мурманская Область", "51"],
+                                                            "150110778142": ["52 Нижегородская Область", "52"],
+                                                            "150110806036": ["53 Новгородская Область", "53"],
+                                                            "150110818753": ["54 Новосибирская Область", "54"],
+                                                            "150110836881": ["55 Омская Область", "55"],
+                                                            "150110852341": ["56 Оренбургская Область", "56"],
+                                                            "150110873080": ["57 Орловская Область", "57"],
+                                                            "150110884402": ["58 Пензенская Область", "58"],
+                                                            "150110897746": ["59 Пермский Край", "59"],
+                                                            "150110931511": ["60 Псковская Область", "60"],
+                                                            "150110946488": ["61 Ростовская Область", "61"],
+                                                            "150110981595": ["62 Рязанская Область", "62"],
+                                                            "150110993301": ["63 Самарская Область", "63"],
+                                                            "150111019731": ["64 Саратовская Область", "64"],
+                                                            "150111042414": ["65 Сахалинская Область", "65"],
+                                                            "150111046821": ["66 Свердловская Область", "66"],
+                                                            "150111079698": ["67 Смоленская Область", "67"],
+                                                            "150111095926": ["68 Тамбовская Область", "68"],
+                                                            "150111107833": ["69 Тверская Область", "69"],
+                                                            "150111129960": ["70 Томская Область", "70"],
+                                                            "150111139567": ["71 Тульская Область", "71"],
+                                                            "150111154061": ["72 Тюменская Область", "72"],
+                                                            "150111173102": ["73 Ульяновская Область", "73"],
+                                                            "150111184108": ["74 Челябинская Область", "74"],
+                                                            "150111208472": ["75 Забайкальский Край", "75"],
+                                                            "150111221129": ["76 Ярославская Область", "76"],
+                                                            "150111239493": ["77 Москва Город", "77"],
+                                                            "150111250280": ["78 Санкт-Петербург Город", "78"],
+                                                            "150111255687": ["79 Еврейская Автономная область", "79"],
+                                                            "150111257618": ["83 Ненецкий Автономный округ", "83"],
+                                                            "150111257975": ["86 Ханты-Мансийский Автономный округ - Югра Автономный округ", "86"],
+                                                            "150111266791": ["87 Чукотский Автономный округ", "87"],
+                                                            "150111267454": ["89 Ямало-Ненецкий Автономный округ", "89"],
+                                                            "150111269815": ["91 Крым Республика", "91"],
+                                                            "150111288335": ["92 Севастополь Город", "92"],
+                                                            "150111291035": ["99 Байконур Город", "99"]
+                                                        },
+                                                        "isDadata": true,
+                                                        "fieldNames": "inn title_rus region { id formalname fullname } address",
+                                                        "dadataKey": "7ea6f0ebaae13050b8a4632778e26271c56fdfc2",
+                                                        "inputName": "f_1937923210_$id",
+                                                        "initialString": "",
+                                                        "fltFieldName": "search_string",
+                                                        "regionId": "",
+                                                        "orgLabel": "Компания",
+                                                        "allRegions": {
+                                                            "150110000000": "01 Адыгея Республика",
+                                                            "150110005989": "02 Башкортостан Республика",
+                                                            "150110048166": "03 Бурятия Республика",
+                                                            "150110063216": "04 Алтай Республика",
+                                                            "150110066844": "05 Дагестан Республика",
+                                                            "150110090893": "06 Ингушетия Республика",
+                                                            "150110094775": "07 Кабардино-Балкарская Республика",
+                                                            "150110098655": "08 Калмыкия Республика",
+                                                            "150110102218": "09 Карачаево-Черкесская Республика",
+                                                            "150110106194": "10 Карелия Республика",
+                                                            "150110112581": "11 Коми Республика",
+                                                            "150110119011": "12 Марий Эл Республика",
+                                                            "150110126840": "13 Мордовия Республика",
+                                                            "150110135110": "14 Саха /Якутия/ Республика",
+                                                            "150110146267": "15 Северная Осетия - Алания Республика",
+                                                            "150110148993": "16 Татарстан Республика",
+                                                            "150110179218": "17 Тыва Республика",
+                                                            "150110184035": "18 Удмуртская Республика",
+                                                            "150110202716": "19 Хакасия Республика",
+                                                            "150110211874": "20 Чеченская Республика",
+                                                            "150110223288": "21 Чувашская Республика - Чувашия",
+                                                            "150110236045": "22 Алтайский Край",
+                                                            "150110258178": "23 Краснодарский Край",
+                                                            "150110303898": "24 Красноярский Край",
+                                                            "150110331321": "25 Приморский Край",
+                                                            "150110345720": "26 Ставропольский Край",
+                                                            "150110364498": "27 Хабаровский Край",
+                                                            "150110374983": "28 Амурская Область",
+                                                            "150110383173": "29 Архангельская Область",
+                                                            "150110395568": "30 Астраханская Область",
+                                                            "150110405616": "31 Белгородская Область",
+                                                            "150110421440": "32 Брянская Область",
+                                                            "150110438624": "33 Владимирская Область",
+                                                            "150110453209": "34 Волгоградская Область",
+                                                            "150110475019": "35 Вологодская Область",
+                                                            "150110494317": "36 Воронежская Область",
+                                                            "150110515120": "37 Ивановская Область",
+                                                            "150110527631": "38 Иркутская Область",
+                                                            "150110553767": "39 Калининградская Область",
+                                                            "150110566233": "40 Калужская Область",
+                                                            "150110580475": "41 Камчатский Край",
+                                                            "150110582875": "42 Кемеровская Область",
+                                                            "150110603828": "43 Кировская Область",
+                                                            "150110625226": "44 Костромская Область",
+                                                            "150110635567": "45 Курганская Область",
+                                                            "150110648263": "46 Курская Область",
+                                                            "150110658625": "47 Ленинградская Область",
+                                                            "150110701077": "48 Липецкая Область",
+                                                            "150110711928": "49 Магаданская Область",
+                                                            "150110713070": "50 Московская Область",
+                                                            "150110775367": "51 Мурманская Область",
+                                                            "150110778142": "52 Нижегородская Область",
+                                                            "150110806036": "53 Новгородская Область",
+                                                            "150110818753": "54 Новосибирская Область",
+                                                            "150110836881": "55 Омская Область",
+                                                            "150110852341": "56 Оренбургская Область",
+                                                            "150110873080": "57 Орловская Область",
+                                                            "150110884402": "58 Пензенская Область",
+                                                            "150110897746": "59 Пермский Край",
+                                                            "150110931511": "60 Псковская Область",
+                                                            "150110946488": "61 Ростовская Область",
+                                                            "150110981595": "62 Рязанская Область",
+                                                            "150110993301": "63 Самарская Область",
+                                                            "150111019731": "64 Саратовская Область",
+                                                            "150111042414": "65 Сахалинская Область",
+                                                            "150111046821": "66 Свердловская Область",
+                                                            "150111079698": "67 Смоленская Область",
+                                                            "150111095926": "68 Тамбовская Область",
+                                                            "150111107833": "69 Тверская Область",
+                                                            "150111129960": "70 Томская Область",
+                                                            "150111139567": "71 Тульская Область",
+                                                            "150111154061": "72 Тюменская Область",
+                                                            "150111173102": "73 Ульяновская Область",
+                                                            "150111184108": "74 Челябинская Область",
+                                                            "150111208472": "75 Забайкальский Край",
+                                                            "150111221129": "76 Ярославская Область",
+                                                            "150111239493": "77 Москва Город",
+                                                            "150111250280": "78 Санкт-Петербург Город",
+                                                            "150111255687": "79 Еврейская Автономная область",
+                                                            "150111257618": "83 Ненецкий Автономный округ",
+                                                            "150111257975": "86 Ханты-Мансийский Автономный округ - Югра Автономный округ",
+                                                            "150111266791": "87 Чукотский Автономный округ",
+                                                            "150111267454": "89 Ямало-Ненецкий Автономный округ",
+                                                            "150111269815": "91 Крым Республика",
+                                                            "150111288335": "92 Севастополь Город",
+                                                            "150111291035": "99 Байконур Город"
+                                                        },
+                                                        "typeId": "994",
+                                                        "isIndividualEntrepreneur": false,
+                                                        "initialValue": "",
+                                                        "placeHolder": "Начните вводить номер или название организации",
+                                                        "fieldId": "1937923210",
+                                                        "formMapping": "forms"
+                                                    }, false, false);
+                                                });</script>
+                                            </div>
+                                            <div class="form-group form-group-required"><label class="control-label">Должность</label><select
+                                                    name="f_1937910006_$id" id="f_1937910006_$id" class="form-control"
+                                                    onmousewheel="return false;"
+                                                    onchange="handlePositionChange('f_1937910006_$id', 'posSpec_$id', 'positionAsString_$id')">
+                                                <option value="150910079858">ДРУГОЕ (указать)</option>
+                                                <option value="150910108188">1-й проректор</option>
+                                                <option value="150910079793">Аспирант</option>
+                                                <option value="150910079794">Ассистент</option>
+                                                <option value="150910079795">Ассистент кафедры</option>
+                                                <option value="150910108189">Ведущий инженер</option>
+                                                <option value="150910079797">Ведущий консультант</option>
+                                                <option value="150910079796">Ведущий курса</option>
+                                                <option value="150910079798">Ведущий научный сотрудник</option>
+                                                <option value="150910079799">Ведущий советник</option>
+                                                <option value="150910079800">Ведущий специалист</option>
+                                                <option value="150910079801">Ведущий эксперт</option>
+                                                <option value="150910108190">Вице-президент</option>
+                                                <option value="150910079802">Воспитатель</option>
+                                                <option value="150910079803">Генеральный директор</option>
+                                                <option value="150910079804">Главный специалист</option>
+                                                <option value="150910079805">Декан</option>
+                                                <option value="150910079806">Директор</option>
+                                                <option value="150910079807">Диспетчер образовательного учреждения
+                                                </option>
+                                                <option value="150910079808">Доцент кафедры</option>
+                                                <option value="150910108191">Журналист</option>
+                                                <option value="150910079809">Заведущий отделом</option>
+                                                <option value="150910079810">Заведующий</option>
+                                                <option value="150910156608">Заведующий кафедрой</option>
+                                                <option value="150910168922">Заведующий лабораторией</option>
+                                                <option value="150910108193">Заведующий отделением</option>
+                                                <option value="150910108194">Заведующий отделом</option>
+                                                <option value="150910108195">Заведующий сектором</option>
+                                                <option value="150910108192">Заведующий филиалом</option>
+                                                <option value="150910079811">Завуч</option>
+                                                <option value="150910079812">Заместитель</option>
+                                                <option value="150910108196">Заместитель генерального директора</option>
+                                                <option value="150910163496">Заместитель главного конструктора</option>
+                                                <option value="150910079813">Заместитель главы Администрации</option>
+                                                <option value="150910079814">Заместитель декана</option>
+                                                <option value="150910079786">Заместитель директора</option>
+                                                <option value="150910079815">Заместитель директора</option>
+                                                <option value="150910108197">Заместитель министра</option>
+                                                <option value="150910079816">Заместитель начальника</option>
+                                                <option value="150910079817">Заместитель первого проректора</option>
+                                                <option value="150910108198">Заместитель председателя</option>
+                                                <option value="150910108199">Заместитель председателя правительства
+                                                </option>
+                                                <option value="150910108200">Заместитель проректора</option>
+                                                <option value="150910079818">Заместитель руководителя</option>
+                                                <option value="150910079820">Инженер</option>
+                                                <option value="150910079821">Инженер-преподаватель</option>
+                                                <option value="150910079822">Инструктор</option>
+                                                <option value="150910079819">И.о. начальника</option>
+                                                <option value="150910108201">И.о. ректора</option>
+                                                <option value="150910079823">Исполнительный директор</option>
+                                                <option value="150910079824">Коммерческий директор</option>
+                                                <option value="150910108202">Консультант</option>
+                                                <option value="150910267667">Концертмейстер</option>
+                                                <option value="150910079825">Координатор</option>
+                                                <option value="150910079826">Координатор проектов</option>
+                                                <option value="150910079827">Лаборант</option>
+                                                <option value="150910079828">Лаборант-исследователь</option>
+                                                <option value="150910079829">Математик</option>
+                                                <option value="150910079830">Менеджер</option>
+                                                <option value="150910108203">Менеджер по персоналу</option>
+                                                <option value="150910174373">Менеджер продуктов</option>
+                                                <option value="150910108204">Менеджер проектов</option>
+                                                <option value="150910079831">Методист</option>
+                                                <option value="150910108205">Министр</option>
+                                                <option value="150910079832">Младший научный сотрудник</option>
+                                                <option value="150910079833">Наставник</option>
+                                                <option value="150910159661">Научный сотрудник</option>
+                                                <option value="150910079834">Начальник</option>
+                                                <option value="150910108206">Начальник департамента</option>
+                                                <option value="150910079835">Начальник отдела</option>
+                                                <option value="150910108207">Начальник управления</option>
+                                                <option value="150910630076">Не указано</option>
+                                                <option value="150910108162">Обучающийся из ресурса об одаренных детях
+                                                </option>
+                                                <option value="150910079836">Педагог</option>
+                                                <option value="150910079837">Педагог-психолог</option>
+                                                <option value="150910108208">Первый заместитель губернатора</option>
+                                                <option value="150910108209">Первый заместитель директора</option>
+                                                <option value="150910108210">Первый заместитель министра</option>
+                                                <option value="150910079838">Первый проректор</option>
+                                                <option value="150910108161">Получатель гранта Президента РФ</option>
+                                                <option value="150910079839">Помощник</option>
+                                                <option value="150910108211">Помощник губернатора</option>
+                                                <option value="150910108212">Помощник ректора</option>
+                                                <option value="150910108213">Председатель комитета</option>
+                                                <option value="150910167747">Представитель органа исполнительной власти
+                                                    субъекта РФ
+                                                </option>
+                                                <option value="150910079840">Президент</option>
+                                                <option value="150910079841">Преподаватель</option>
+                                                <option value="150910079842">Проректор</option>
+                                                <option value="150910079843">Профессор</option>
+                                                <option value="150910079844">Профконсультант</option>
+                                                <option value="150910079845">Региональный представитель</option>
+                                                <option value="150910079846">Редактор</option>
+                                                <option value="150910108214">Ректор</option>
+                                                <option value="150910079847">Руководитель</option>
+                                                <option value="150910077753">Руководитель организации</option>
+                                                <option value="150910167746">Руководитель регионального центра</option>
+                                                <option value="150910108215">Советник президента</option>
+                                                <option value="150910108216">Сооснователь</option>
+                                                <option value="150910079848">Специалист</option>
+                                                <option value="150910079849">Стажер</option>
+                                                <option value="150910079850">Старший воспитатель</option>
+                                                <option value="150910108217">Старший куратор</option>
+                                                <option value="150910079851">Старший методист</option>
+                                                <option value="150910108218">Старший научный сотрудник</option>
+                                                <option value="150910079852">Старший преподаватель</option>
+                                                <option value="150910079853">Студент</option>
+                                                <option value="150910079854">Тьютор</option>
+                                                <option value="150910108219">Управляющий директор</option>
+                                                <option value="150910079855">Управляющий партнер</option>
+                                                <option value="150910079856">Ученый секретарь</option>
+                                                <option value="150910077741">Учитель</option>
+                                                <option value="150910079857">Учитель</option>
+                                            </select></div>
+                                            <script>formsOnDocumentReady(function () {
+                                                handlePositionChange('f_1937910006_$id', 'posSpec_$id', 'positionAsString_$id');
+                                            });</script>
+                                            <div class="form-group" id="posSpec_$id" style="display: none;"><label
+                                                    for="f_1937410041_$id"
+                                                    class="control-label">Специализация</label><input type="text"
+                                                                                                      class="form-control"
+                                                                                                      name="f_1937410041_$id"
+                                                                                                      id="f_1937410041_$id"
+                                                                                                      value=""
+                                                                                                      placeholder="Предмет, кафедра, отдел и т.п.">
+                                            </div>
+                                            <div class="form-group form-group-required" id="positionAsString_$id"
+                                                 style="display: none;"><label for="f_1937410062_$id"
+                                                                               class="control-label">Указать
+                                                должность</label><input type="text" class="form-control"
+                                                                        name="f_1937410062_$id" id="f_1937410062_$id"
+                                                                        value=""></div>
+                                            <button type="button" class="btn btn-default pull-right"
+                                                    onclick="Forms.removeBindObject('j937ob_$id','$id', 'j937ob'); return false;">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                Удалить место работы
+                                            </button>
+                                            <input type="hidden" name="f_j937ob_$id_add" id="f_j937ob_$id_add"
+                                                   value="1"></td>
+                                    </tr>
+                                    <tr id="j937ob_add_btn">
+                                        <td>
+                                            <button type="button" class="btn btn-default pull-right"
+                                                    onClick="Forms.addBindObjectFields('j937ob'); return false;"><span
+                                                    class="glyphicon glyphicon-plus" aria-hidden="true"></span> Добавить
+                                                место работы
+                                            </button>
+                                            <input type="hidden" name="f_j937ob" id="f_j937ob" value="hiddenAdd"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="results"><br/>
+                        <table class="table table-striped table-condensed">
+                            <tr>
+                                <td>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Учебный год</label></div>
+                                        <div class="col-lg-9">2018</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Мероприятие</label></div>
+                                        <div class="col-lg-9">Всероссийская олимпиада школьников (Региональный этап)
+                                        </div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Предмет</label></div>
+                                        <div class="col-lg-9">Информатика</div>
+                                    </div>
+                                    <div class="row form-control-static" id="profile_197620030110752946"
+                                         style="display: none;">
+                                        <div class="col-lg-3"><label class="control-label">Профиль</label></div>
+                                        <div class="col-lg-9" id="profile_197620030110752946_string"></div>
+                                    </div>
+                                    <script>var profile_197620030110752946_string = document.getElementById("profile_197620030110752946_string");
+                                    if (profile_197620030110752946_string && profile_197620030110752946_string.innerText) {
+                                        document.getElementById("profile_197620030110752946").style["display"] = "block";
+                                    }
+                                    </script>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Этап</label></div>
+                                        <div class="col-lg-9">Региональный этап_Республика Татарстан (Татарстан)</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Результат</label></div>
+                                        <div class="col-lg-9">Участник</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Уровень РСОШ</label></div>
+                                        <div class="col-lg-9"></div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3">
+                                            <small>online номер</small>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <small>197620030110752946</small>
+                                        </div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3">
+                                            <small>ГИР номер</small>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <small>433567</small>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Учебный год</label></div>
+                                        <div class="col-lg-9">2018</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Мероприятие</label></div>
+                                        <div class="col-lg-9">Всероссийская олимпиада школьников (Региональный этап)
+                                        </div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Предмет</label></div>
+                                        <div class="col-lg-9">Информатика</div>
+                                    </div>
+                                    <div class="row form-control-static" id="profile_197620030110753676"
+                                         style="display: none;">
+                                        <div class="col-lg-3"><label class="control-label">Профиль</label></div>
+                                        <div class="col-lg-9" id="profile_197620030110753676_string"></div>
+                                    </div>
+                                    <script>var profile_197620030110753676_string = document.getElementById("profile_197620030110753676_string");
+                                    if (profile_197620030110753676_string && profile_197620030110753676_string.innerText) {
+                                        document.getElementById("profile_197620030110753676").style["display"] = "block";
+                                    }
+                                    </script>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Этап</label></div>
+                                        <div class="col-lg-9">Региональный этап_Республика Татарстан (Татарстан)</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Результат</label></div>
+                                        <div class="col-lg-9">Участник</div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3"><label class="control-label">Уровень РСОШ</label></div>
+                                        <div class="col-lg-9"></div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3">
+                                            <small>online номер</small>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <small>197620030110753676</small>
+                                        </div>
+                                    </div>
+                                    <div class="row form-control-static">
+                                        <div class="col-lg-3">
+                                            <small>ГИР номер</small>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <small>433789</small>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <input type="hidden" name="fid" value="199910000004"><input type="hidden" name="rtrn" value="">
+                <script>var FIELDS_INIT_VALUES = {}</script>
+                <input type="hidden" name="act" value="send"><input type="hidden" name="task" value="edit"><input
+                    type="hidden" name="l" value="ru"><input type="hidden" name="id" value="100120030110044769"><input
+                    type="hidden" name="__api" value="1">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>var f199910000004 = {
+        "f_id": {"v": ""},
+        "f_1001410013": {"v": "Валеев"},
+        "f_1001410010": {"v": "ilnur.valeev123@gmail.com"},
+        "f_1001410011": {"v": "79196846542"}
+    };</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/forms-init.js?v=9cfe3460a5646da44cec"></script>
+    <script src="js/forms-lib.js?v=431a7066739cc0f50583"></script>
+    <script src="js/forms.js?v=14c5705f5b4744e76069"></script>
+    <link href="dadata/suggestions.min.css" rel="stylesheet"/>
+    <script src="dadata/jquery.suggestions.min.js"></script>
+</div>
+</body>
+</html>

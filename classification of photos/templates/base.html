@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" contrut="width=device-width,
+    initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <title>Upload photo</title>
+</head>
+
+<style type="text/css">
+    .block2 {
+        top: 650px;
+        left: 5%;
+        width: 300px;
+        background: #ffcc00;
+        padding: 1%;
+        border: solid 1px black;
+        float: left;
+        position: absolute;
+    }
+
+    .head_main {
+        position: absolute;
+        float: left;
+        top: 600px;
+        left: 5%;
+    }
+
+    .profile {
+        float: left;
+        position: absolute;
+        top: 140px;
+        left: 5%;
+        height: 450px;
+
+        background: #DCDCDC;
+        padding: 9%;
+        border: solid 1px black;
+    }
+
+    .btn {
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+        top: 10px;
+        padding: 0.8%;
+        border-radius: 3px;
+        background: #ffcc00;
+        box-shadow: 0 -3px #ffba00 inset;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #f4a900;
+    }
+
+    .btn:active {
+        background: #f4a900;
+        box-shadow: 0 3px #f4a900 inset;
+    }
+
+    #sidebar, #content {
+        position: absolute;
+    }
+
+    #sidebar, #content {
+        overflow: auto;
+        padding: 10px;
+    }
+
+    #header {
+        height: 80px;
+        background: #FEDFC0;
+        border-bottom: 2px solid #7B5427;
+    }
+
+
+    #sidebar {
+        width: 150px;
+        background: #ECF5E4;
+        border-right: 1px solid #231F20;
+        top: 82px;
+        bottom: 0;
+    }
+
+    #content {
+        top: 82px;
+        left: 100px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .topright {
+        position: absolute;
+        top: 20px;
+        right: 380px;
+        font-size: 18px;
+    }
+
+    .lol{
+        float: left;
+        position: relative;
+        top: 500px;
+        left: 60%;
+        height: 300px;
+
+    }
+
+    .hrt{
+        float: left;
+        position: absolute;
+        left: 1%;
+    }
+    .hrt2{
+        float: left;
+        position: absolute;
+        left: 13%;
+    }
+    .lol2{
+        color: #ffcc00;
+    }
+
+    .pop{
+        height: 80px;
+    }
+    #circle {
+        position: absolute;
+        left: 1%;
+        top: 60%;
+        width: 400px;
+        height: 400px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        border-radius: 200px;
+        background: #ffd344;
+    }
+
+    .spl{
+        position: absolute;
+        top: 5px;
+        left: 78%;
+    }
+
+
+    .keke{
+        position: absolute;
+        top: 190px;
+        left: 30%;
+        font-size: 60px;
+    }
+
+    .keke2{
+        position: absolute;
+        top: 260px;
+        left: 30%;
+        font-size: 40px;
+    }
+
+    .keke3{
+        position: absolute;
+        top: 300px;
+        left: 30%;
+        font-size: 40px;
+    }
+</style>
+
+<body>
+<nav class="  navbar-expand-lg navbar-dark bg-dark pop">
+
+    <button class="btn hrt2" onclick="location.href = '/login'">Login</button>
+    <button class="btn hrt" onclick="location.href = '/success'">Submit polygon</button>
+    <img src="../static/mvideo.png" width="200" height="70" class="spl">
+</nav>
+
+
+<h1 class="head_main">Upload file</h1>
+<div class="block2">
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+</div>
+
+<div class="keke">Соколов Евгений Андреевич</div>
+<div class="keke2">Должность: главный котик</div>
+<div class="keke3">Последний визит: сегодня</div>
+
+<div class="profile">
+    <h1>?</h1>
+</div>
+<div class = "lol">
+    <h3>КПД: 100%</h3>
+    <h3>Лучший котик прошлого месяца</h3>
+</div>
+
+</body>
+</html>
