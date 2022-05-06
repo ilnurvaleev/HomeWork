@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+    <a class="navbar-brand" href="#">Ilnur Valeev</a>
+
+        <!-- Links -->
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Theory of Olympiad programming</a>
+            </li>
+        </ul>
+        
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <h5><a class="nav-link text-info" href="https://t.me/ilnur_valeev">tg</a></h5>
+            </li>
+
+            <li class="nav-item text-info">
+                <h5><a class="nav-link text-info" href="https://vk.com/ilnur_valeev1">vk</a></h5>
+            </li>
+
+            <li class="nav-item text-info">
+                <h5><a class="nav-link text-info" href="https://codeforces.com/profile/OrleanMagic">codeforces</a></h5>
+            </li>
+
+            <li class="nav-item text-info">
+                <h5><a class="nav-link text-info" href="https://github.com/ilnurvaleev">github</a></h5>
+            </li>
+        </ul>
+    </div>
+</nav>
