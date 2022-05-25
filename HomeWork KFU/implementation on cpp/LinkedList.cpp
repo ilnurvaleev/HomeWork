@@ -77,7 +77,7 @@ LinkedList CreateNumber(std::string s) {
 
 	reverse(s.begin(), s.end());
 	for (int i = 0; i < (int)s.size(); i += 9) {
-		std::string bl = s.substr(i, std::min(9, (int)s.size() - i * 9));
+		std::string bl = s.substr(i, std::min(9, (int)s.size() - i));
 		reverse(bl.begin(), bl.end());
 		a.add(atoi(bl.c_str()));
 	}
